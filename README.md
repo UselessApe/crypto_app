@@ -1,16 +1,7 @@
 # crypto_app
 
-A new Flutter project.
+A Flutter project which uses Bloc and an external API to show the current prices for the top 25 crypto coins.This app fetches data from afrom https://min-api.cryptocompare.com/.
 
-## Getting Started
+Basically it's only contains one page called homepage which contains the UI and shows the latest prices.  This application only has two models for data_error and currency and one service called data_repo. 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Bloc was used to tell the UI the state and build a listview. Also pull to refresh was implemented.
